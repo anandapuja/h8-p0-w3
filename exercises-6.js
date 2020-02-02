@@ -1,33 +1,34 @@
+// Logic Challenge - Number Palindrome
+
 function angkaPalindrome(num) {
-    // var num = 117;
-    var strNum = String(num);
-    var balikNum = ""; //String yang terbalik
+    
+    // Buat fungsi pembalik parameter, sebelumnya jadikan parameter ke string agar bisa di indeks.
+    function balikStringAngka(strAngka) {
 
-    for( i = strNum.length -1; i >= 0; i-- ) {
-        balikNum += strNum[i];
+    var strAngka = strAngka.toString();
+    var balikAngka = "";
+    for( j = strAngka.length -1; j >= 0; j-- ) {
+      balikAngka += strAngka[j];
+      }
+    return balikAngka;
     }
 
-    // num++;
-    for( i = num; i > 0; i++ ) {
-        if( num === balikNum ) {
-            return balikNum;
-        }
-        break;
+    // Cek jika parameter sama dengan palindrome, increment sampai kondisi sama selanjutnya
+    while( num > 0 ) {
+      num++;
+      if( num == balikStringAngka(num) ) {
+        return balikStringAngka(num); // Return fungsi untuk menampilkan hasil
+      }
     }
+
 }
   
   // TEST CASES
-//   console.log(angkaPalindrome(8)); // 9
-  // console.log(angkaPalindrome(10)); // 11
+  console.log(angkaPalindrome(8)); // 9
+  console.log(angkaPalindrome(10)); // 11
   console.log(angkaPalindrome(117)); // 121
-//   console.log(angkaPalindrome(175)); // 181
-//   console.log(angkaPalindrome(1000)); // 1001
-
-
-
-//  ALGORITMA
-  // cari dulu cara membalikkan masing-masing angka
-    // cara membalikkan angka, jadikan angka jadi string, terus balikkan indeksnya
-  // setelah angkanya terbalik uji apakah angka sama dengan angka terbalik
-  // jika tidak sama, tambahkan angka
-  // return angka sampai sama dengan angka yang terbalik
+  console.log(angkaPalindrome(175)); // 181
+  console.log(angkaPalindrome(1000)); // 1001
+  // TEST CASE SENDIRI
+  console.log(angkaPalindrome(2345)); // 1001
+  console.log(angkaPalindrome(947523)); // 1001
