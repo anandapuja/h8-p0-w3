@@ -30,5 +30,5 @@ function angkaPalindrome(num) {
   console.log(angkaPalindrome(175)); // 181
   console.log(angkaPalindrome(1000)); // 1001
   // TEST CASE SENDIRI
-  console.log(angkaPalindrome(2345)); // 1001
-  console.log(angkaPalindrome(947523)); // 1001
+  console.log(angkaPalindrome(2345)); // 2442
+  console.log(angkaPalindrome(947523)); // 947749
