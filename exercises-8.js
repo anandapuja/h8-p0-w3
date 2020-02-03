@@ -2,11 +2,12 @@
 
 function pasanganTerbesar(num) {
     
-  var strAngka = String(num);
-  var arrAngka = strAngka.split('');
-  for() {
+  // var strAngka = String(num);
+  // var arrAngka = strAngka.split(0, 2);
+  // console.log(arrAngka);
+  // // for() {
     
-  }
+  // }
 }
   
   // TEST CASES
