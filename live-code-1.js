@@ -67,5 +67,6 @@
         PRINT Nama : nama, Harga : hargaDasar * 1.5;
     ELSE IF 2020 % tahunKelahiran > 120 && tahunKelahiran < 1900
         PRINT Invalid Age.
+    END IF
 
 */
