@@ -36,19 +36,19 @@ var hargaIndihome;
 if( name == "" ) {
     console.log('NAMA HARUS DIISI!');
 } else {
-    console.log(`Nama : ${name}`)
+    // console.log(`Nama : ${name}`)
 }
 
 // KONDISI II
 if( nomor_ktp.length < 4 || nomor_ktp === '' ) {
     console.log('NOMOR KTP TIDAK VALID');
 } else {
-    console.log(`Nomor KTP : ${nomor_ktp}`)
+    // console.log(`Nomor KTP : ${nomor_ktp}`)
 }
 
 // KONDISI ALAMAT
 if ( alamat == 'Jakarta' || alamat == 'Surabaya' || alamat == 'Yogyakarta' || alamat == 'Bandung') {
-    console.log(`Alamat Rumah : ${alamat}`)
+    // console.log(`Alamat Rumah : ${alamat}`)
 } else {
     console.log('ALAMAT TIDAK DIKETAHUI');
 }
@@ -56,16 +56,16 @@ if ( alamat == 'Jakarta' || alamat == 'Surabaya' || alamat == 'Yogyakarta' || al
 // HARGA ALAMAT
 if( alamat == 'Jakarta' ) {
     hargaDasar = 100000;
-    console.log(`Harga Dasar : ${hargaDasar}`)
+    // console.log(`Harga Dasar : ${hargaDasar}`)
 } else if( alamat == 'Surabaya' ) {
     hargaDasar = 50000;
-    console.log(`Harga Dasar : ${hargaDasar}`)
+    // console.log(`Harga Dasar : ${hargaDasar}`)
 } else if( alamat == 'Yogyakarta' ) {
     hargaDasar = 45000;
-    console.log(`Harga Dasar : ${hargaDasar}`)
+    // console.log(`Harga Dasar : ${hargaDasar}`)
 } else if( alamat == 'Bandung') {
     hargaDasar = 90000;
-    console.log(`Harga Dasar : ${hargaDasar}`)
+    // console.log(`Harga Dasar : ${hargaDasar}`)
 } else {
     hargaDasar = false;
     console.log('Alamat tidak diketahui');
@@ -79,10 +79,10 @@ if( alamat == 'Jakarta' ) {
 // HARGA TIPE RUMAH
 if( jenis_rumah == 'Normal' ) {
     hargaJenisRumah = 30000;
-    console.log(`Jenis Rumah: ${jenis_rumah}, Harga: ${hargaJenisRumah}`);
+    // console.log(`Jenis Rumah: ${jenis_rumah}, Harga: ${hargaJenisRumah}`);
 } else if( jenis_rumah == 'Large' ) {
     hargaJenisRumah = 50000;
-    console.log(`Jenis Rumah: ${jenis_rumah}, Harga: ${hargaJenisRumah}`);
+    // console.log(`Jenis Rumah: ${jenis_rumah}, Harga: ${hargaJenisRumah}`);
 } else {
     hargaJenisRumah = false;
     console.log('Tidak boleh mendaftar ke program ini');
@@ -91,6 +91,8 @@ if( jenis_rumah == 'Normal' ) {
 //HARGA INDIHOME
 if( hargaJenisRumah != false && hargaDasar != false) { 
     hargaIndihome = hargaDasar + hargaJenisRumah;
-    console.log(hargaIndihome);
+    // console.log(hargaIndihome);
+} else {
+    hargaIndihome = "Invalid";
 }
-// console.log(`Harga langganan, ${name} : ${hargaIndihome}`);
+console.log(`${name} ${nomor_ktp} ${hargaIndihome}`);
