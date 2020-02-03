@@ -1,9 +1,12 @@
 // Logic Challenge - Pasangan Angka Terbesar
 
 function pasanganTerbesar(num) {
-
-    }
     
+  var strAngka = String(num);
+  var arrAngka = strAngka.split('');
+  for() {
+    
+  }
 }
   
   // TEST CASES

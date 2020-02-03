@@ -27,7 +27,7 @@
 var name = 'Ananda Puja' // silakan berikan nilai bebas
 var nomor_ktp = '234234' //silahkan berikan nilai bebas
 var alamat = 'Jakarta' // bisa diisi dengan alamat Jakarta atau Surabaya atau Yogyakarta atau Bandung selain alamat tersebut silahkan keluarkan output seperti yang diminta
-var jenis_rumah = 'Kosan' //bisa diisi dengan 3 jenis rumah normal atau large atau kosan selain jenis rumah tersebut silahkan keluarkan output seperti yang diminta
+var jenis_rumah = 'Normal' //bisa diisi dengan 3 jenis rumah normal atau large atau kosan selain jenis rumah tersebut silahkan keluarkan output seperti yang diminta
 var hargaDasar;
 var hargaJenisRumah;
 var hargaIndihome;

@@ -53,6 +53,20 @@
  */
 
 var line = 'abcde&12345' //kalian bisa mengubah isi dari 'line' untuk menguji contoh-contoh string yang lainnya
-var param = '' //kalian bisa mengisi param ini dengan 'sigma', 'letters', 'length', dll
+var param = 'sigma' //kalian bisa mengisi param ini dengan 'sigma', 'letters', 'length', dll
 
 //tulis kode kalian disini
+if( param == 'sigma' ){
+    var jumlahLine;
+    if(true) {
+        jumlahLine += line[0-9];
+    }
+    console.log(jumlahLine);
+    // var jumlahLine = "";
+    // for( i = 0; i < line.length -1; i++ ) {
+    //     if( line[i] == ['0-9'] ) {
+    //         jumlahLine += 1;
+    //     }
+    // }
+    // console.log(jumlahLine);
+}
