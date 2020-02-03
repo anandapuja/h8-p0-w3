@@ -1,3 +1,5 @@
+// Logic Challenge - Mencari Mean
+
 function cariMean(arr) {
     var jumlahAngka = 0;
     for (i = 0; i <= arr.length -1; i++){
