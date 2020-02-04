@@ -19,7 +19,13 @@
 
 
 function oddFinder(string) {
-   //tulis kode disini
+   // Bagi Dua
+   var bagiDua;
+   for( i = 0; i < string.length -1; i++) {
+      bagiDua = string[i] + string[i+1]
+   }
+   console.log(bagiDua);
+   return string;
 }
 
 

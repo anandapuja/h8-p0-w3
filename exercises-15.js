@@ -1,8 +1,11 @@
 function groupAnimals(animals) {
 
-    var splitHewan;
-    animals.split();
-    console.log(splitHewan);
+    var pisahkanHewan;
+    for(i=0; i< animals.length-1; i++) {
+        for(j=0; j <) {
+
+        }
+    }
 
   }
   
