@@ -2,27 +2,29 @@
 
 function groupAnimals(animals) {
 
-    var hasil = [[]];
-    // for( i = 0; i < animals.length -1; i++) {
-
-    //     var hasilHewan = [[]];
-    for( z = 0; z < animals.length; z++ ) {
-        var z = 0;
-        var hewanSama = [[]];
-    //     var y = 1;
-        for ( j = 0; j <= animals.length-1; j++ ){ // 0, 1,
-            if( animals[z][0] === animals[j][0] ) { // false
-                hewanSama[[0]].push(animals[j]);
-            }
-            else {
-                z++
+    var sorting = [];
+    for( i = 0; i < animals.length; i++ ) {
+        for( j = 0; j <animals.length; j++ ) {
+            if( animals[i] < animals[j] ) {
+                sorting = animals[i];
+                animals[i] = animals[j];
+                animals[j] = sorting;
             }
         }
-        console.log(hewanSama);
-        // console.log(hewanSama);
     }
-    // hasilHewan.push(hewanSama)
-    // console.log(hasilHewan);
+
+    // console.log(animals)
+
+    var hasil = []
+    for( i = 0; i < animals.length; i++ ) {
+        for( j = 0; j < animals.length; j++ ) {
+            if( animals[i][0] == animals[j][0] && i != j ) {
+                hasil.push(animals[[j]]);
+            }
+        }
+    }
+
+    console.log(hasil)
 
 }
 
@@ -70,7 +72,7 @@ function groupAnimals(animals) {
 
 
 
-let string = 'aacab'
+// let string = 'aacab'
 
 
 /**
