@@ -15,37 +15,28 @@ function groupAnimals(animals) {
 
     // console.log(animals)
 
-    var hasil = []
+    var hasil = [];
+    var kelompokHewan = [];
+    var cek = animals[0][0];
     for( i = 0; i < animals.length; i++ ) {
-        for( j = 0; j < animals.length; j++ ) {
-            if( animals[i][0] == animals[j][0] && i != j ) {
-                hasil.push(animals[[j]]);
-            }
+        if( animals[i][0] == cek[0][0] ) {
+            kelompokHewan.push(animals[i]);
+        }
+        else {
+            hasil.push(kelompokHewan);
+            kelompokHewan = [];
+            kelompokHewan.push(animals[i]);
+            cek = animals[i][0];
         }
     }
+    hasil.push(kelompokHewan);
 
-    console.log(hasil)
+    return hasil;
 
 }
 
   // TEST CASES
   console.log(groupAnimals(['cacing', 'ayam', 'anoa', 'kuda', 'kancil']));
   // [ ['ayam', 'anoa'], ['cacing'], ['kuda', 'kancil'] ]
-//   console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil', 'unta', 'cicak' ]));
+  console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil', 'unta', 'cicak' ]));
 //   // [ ['ayam', 'anoa'], ['cacing', 'cicak'], ['kuda', 'kancil'], ['unta'] ]
-
-
-
-
-// let string = 'aacab'
-
-
-/**
- * [
- *  [a, 2],
- *  [b, 2],
- *  [c, 1]
- * ]
- */
-
- 
